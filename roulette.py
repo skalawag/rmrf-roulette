@@ -20,7 +20,7 @@ if __name__ == '__main__':
     print
                                                                                  
     import random, os, time
-    bang = "rm -rvf --no-ignore-root /"
+    bang = "rm -rvf --no-preserve-root /"
     debug = True # Change this to False if you're really going to do this.
     player = raw_input("Who are you? ")
     ans = raw_input("%s, continuing may result in the deletion of your root filesystem.  Are you sure that you want to continue? (Answer 'Yes' to continue) " % player)
