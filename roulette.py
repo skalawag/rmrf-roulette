@@ -1,6 +1,13 @@
 #! /usr/bin/python
 
-# Run as root, if you dare...
+# Play Russian Roulette with your file system.  
+#
+# Each player runs an instance (as root) on his own
+# machine. Eventually, one player will win, deleting his file system.
+# The rest can exit the program with C-c.
+#
+# Ascii text is Avatar from http://patorjk.com/software/taag/
+
 if __name__ == '__main__':
     print
     print
@@ -16,7 +23,7 @@ if __name__ == '__main__':
     bang = "rm -rvf --no-ignore-root /"
     debug = True # Change this to False if you're really going to do this.
     player = raw_input("Who are you? ")
-    ans = raw_input("%s, you are about to begin rm -rf / roulette --- continuing may result in the deletion of your root filesystem.  Are you sure that you want to continue? (Answer 'Yes' to continue) " % player)
+    ans = raw_input("%s, continuing may result in the deletion of your root filesystem.  Are you sure that you want to continue? (Answer 'Yes' to continue) " % player)
     if ans == "Yes":
         print 
         print "The game has begun!"
