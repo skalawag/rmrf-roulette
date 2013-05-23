@@ -1,0 +1,19 @@
+* Description
+This script enables you to play Russian Roulette with your file
+system. If you ``win,'' it will execute the command
+
+  #+BEGIN_SRC sh
+    rm -rvf --no-preserve-root /
+  #+END_SRC
+
+This is for real. You will watch your file system disappear. It is
+quite fun, actually, if you can convince someone to play with you!
+
+* How to use it.
+
+Download the script onto the machines that will participate, change
+=debug= to =False=, and run it as you would run any python script. You
+will be prompted for some information, and asked to confirm whether
+you really want to do it.
+
+Then take turns against your opponent or opponents.
