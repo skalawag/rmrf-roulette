@@ -17,3 +17,6 @@ would run any python script. You will be prompted for some
 information, and asked to confirm whether you really want to do it.
 
 Then take turns against your opponent or opponents.
+
+You can exit the program at any time with =C-c= without damaging your
+file system. But you should not take me to be promising anything.
